@@ -85,6 +85,14 @@ class appWorking : AppCompatActivity(){
            binding.whiteBorder.isVisible = true
        }
 
+        /*binding.RecloseCard.setOnClickListener{
+            binding.bacDimLayout.isVisible = false
+            binding.RecloseCard.isVisible = false
+            binding.myRecycler.isVisible = true
+            binding.welcomeText.isVisible = true
+            binding.whiteBorder.isVisible = true
+        }*/
+
        binding.menuList.setOnItemClickListener { adapterView, view, i, l ->
            if(menuListItems[i].equals("Logout")){
                mGoogleSignInClient.signOut().addOnCompleteListener {
@@ -126,7 +134,7 @@ class appWorking : AppCompatActivity(){
         val col = db.collection(sessionManager.getKeyUserName()!!).document("Data").collection("init")
         val query = col.orderBy("title", Query.Direction.DESCENDING)
         val recOption = FirestoreRecyclerOptions.Builder<User>().setQuery(query, User::class.java).build()  //setting query for our FireStoreRecyclerOptions
-        adapterClass = RecyclerAdapterClass(recOption, context)   //Initializing our adapter
+        adapterClass = RecyclerAdapterClass(recOption, this)   //Initializing our adapter
         binding.myRecycler.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding.myRecycler.adapter = adapterClass
 
@@ -149,6 +157,20 @@ class appWorking : AppCompatActivity(){
         }
         val itemTouchHelper = ItemTouchHelper(simpleCallBack) //passing SimpleCallBack object to our ItemTouch constructor
         itemTouchHelper.attachToRecyclerView(binding.myRecycler)  //attaching itemTouch with our recycler
+
+        /*val g = intent.getStringExtra("checkFLag")
+        Toast.makeText(applicationContext, g, Toast.LENGTH_SHORT).show()
+            if(g.equals("true")){
+            binding.RecloseCard.isVisible =true
+            binding.bacDimLayout.isVisible = true
+            binding.myRecycler.isVisible = false
+            binding.welcomeText.isVisible = false
+            binding.whiteBorder.isVisible = false
+
+            binding.ReTitle.setText(intent.getStringExtra("title"))
+            binding.Recredentials.setText(intent.getStringExtra("passwords"))
+        }*/
+
         }
 
     override fun onStart() {
