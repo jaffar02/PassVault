@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "240643187966",
+    "firebase_url": "https://password-saving-app-4da09-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "password-saving-app-4da09",
+    "storage_bucket": "password-saving-app-4da09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240643187966:android:d4ffbabd165a3a6dbf71af",
+        "android_client_info": {
+          "package_name": "com.zero.passvault"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240643187966-b0rff2hn0hus1891vnaa5vj7d4fpudsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfiJ-KFaOU1rO4i5EIqXe4Vdkoze6gDME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240643187966-b0rff2hn0hus1891vnaa5vj7d4fpudsd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/drawable-anydpi/ic_Next.xml" value="0.2635416666666667" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/drawable-anydpi/ic_add.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/drawable-anydpi/ic_help.xml" value="0.2635416666666667" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/drawable-anydpi/ic_menu.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/drawable-anydpi/ic_next.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2635416666666667" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/drawable/round_button.xml" value="0.25625" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/drawable/symbols.xml" value="0.2462962962962963" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/layout-large/activity_main.xml" value="0.185546875" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/layout-normal/activity_main.xml" value="0.24739583333333334" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/layout-small/activity_main.xml" value="0.24739583333333334" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/layout/activity_app_working.xml" value="0.18" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/layout/activity_forgot_pass.xml" value="0.389945652173913" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/layout/activity_login_actual.xml" value="0.33" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/layout/data_card.xml" value="0.19" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/layout/forgot_key.xml" value="0.24739583333333334" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/layout/security_email_view.xml" value="0.25" />
+        <entry key="..\:/Users/gaming/AndroidStudioProjects/PassVault/app/src/main/res/menu/menu_tab.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

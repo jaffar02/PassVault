@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/amaranth</item>
+        <item>@font/amita</item>
+        <item>@font/autour_one</item>
+        <item>@font/carter_one</item>
+        <item>@font/courgette</item>
+        <item>@font/cutive</item>
+        <item>@font/roboto_mono_bold</item>
+        <item>@font/unlock</item>
+    </array>
+</resources>

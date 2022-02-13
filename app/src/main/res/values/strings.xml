@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PassVault</string>
+    <string name="keyText">Set Secret Key</string>
+    <string name="secretKey">Secret Key</string>
+    <string name="todo">TODO</string>
+    <string name="SignupText">Signup</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="appname_title">Vault</string>
+    <string name="Pass">Pass</string>
+    <string name="welcome">Welcome</string>
+    <string name="deletebtn">Delete</string>
+    <string name="savebtn">Save</string>
+    <string name="updatebtn">Update</string>
+</resources>

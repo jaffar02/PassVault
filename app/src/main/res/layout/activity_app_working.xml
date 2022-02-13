@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtemp"
+    tools:context=".appWorking">
+    <RelativeLayout
+        android:id="@+id/bac_dim_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dim_background"
+        android:visibility="gone"
+        android:clickable="true"
+        android:elevation="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:focusable="true" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/whiteBorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#0000"
+            app:cardElevation="0dp"
+            android:elevation="0dp"
+            android:visibility="visible"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1.8dp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/carter_one"
+            android:text="@string/welcome"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:textAllCaps="true"
+            android:shadowDy="5"
+            android:shadowRadius="4"
+            android:paddingRight="10dp"
+            android:elevation="0dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#0000"
+            android:src="@drawable/ic_add"
+            android:layout_marginRight="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="ImageContrastCheck" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
+
+        <ListView
+            android:id="@+id/menuList"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menuIcon"
+            />
+
+<!-- ENTER PROPERTIES STARTED-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/closeCard"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:focusable="true">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/EnterDataCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="170dp"
+            android:layout_marginHorizontal="35dp"
+            app:cardCornerRadius="15dp"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/titlecard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="29dp"
+                android:layout_marginVertical="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/blue"
+                app:strokeWidth="2dp"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:textStyle="bold"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:paddingHorizontal="7dp"
+                    android:backgroundTint="@color/white"
+                    android:textSize="20sp"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/credentialsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1dp"
+                android:layout_marginHorizontal="29dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/titlecard"
+                android:layout_marginTop="65dp"
+                app:strokeColor="@color/blue"
+                app:strokeWidth="2dp"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/credentials"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="10"
+                    android:hint="Credentials"
+                    android:minLines="8"
+                    android:backgroundTint="@color/white"
+                    android:gravity="top|left"
+                    android:textSize="17sp"
+                    android:paddingHorizontal="7dp"
+                    android:maxLines="15" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:onClick="savebtn"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/credentialsCard"
+                app:strokeColor="@color/blue"
+                app:strokeWidth="2dp"
+                android:textColor="@color/black"
+                android:focusable="true" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+<!-- ENTER PROPERTIES ENDED-->
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="568dp"
+    android:layout_marginTop="9dp"
+    app:layout_constraintTop_toBottomOf="@id/menuList"
+    app:layout_constraintBottom_toTopOf="@id/addbtn">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        tools:listitem="@layout/data_card"
+        android:layout_marginHorizontal="13dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
